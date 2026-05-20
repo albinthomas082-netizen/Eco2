@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>EcoLogic - Apply</title>
+        <link rel="stylesheet" href="Apply.css">
+    </head>
+    <body>
+
+        <div class="top-header">
+            <div class="logo">
+                <img src="assets/ecoLogic_logo.jpg" alt="EcoLogic Logo"
+                    class="img-logo">
+            </div>
+            <h1 class="site-title">EcoLogic</h1>
+        </div>
+
+        <nav class="main-nav">
+            <a href="website.html">Home</a>
+            <a href="staff.html">Our Staff</a>
+            <a href="Job_Spec.html">Job_specifications</a>
+            <a href="courses.html">Courses</a>
+            <a href="Apply.html">Online Application</a>
+        </nav>
+
+        <section class="banner">
+            <h2>Job Application Form</h2>
+            <p>Eco Logic application page</p>
+        </section>
+
+        <section class="application-form">
+            <form
+                id="jobApplicationForm"
+                action="https://formspree.io/f/xbdwjron"
+                method="POST"
+                enctype="multipart/form-data">
+
+                <h2>Job Application Form</h2>
+
+                <label>Full Name *</label>
+                <input type="text" name="fullName" placeholder="Jack Thomas"
+                    required>
+
+                <label>Email Address *</label>
+                <input type="email" name="email"
+                    placeholder="jack.thomas@example.com" required>
+
+                <label>Phone Number *</label>
+                <input type="tel" name="phone" placeholder="123-456-7890"
+                    required>
+
+                <label>Position Applied For *</label>
+                <select name="position" required>
+                    <option value>Select a position</option>
+                    <option value="Sustainability Officer">Sustainability
+                        Officer</option>
+                    <option value="Project Assistant">Project Assistant</option>
+                    <option value="Research Intern">Research Intern</option>
+                </select>
+
+                <label>Sustainability Ideas *</label>
+                <textarea
+                    name="ideas"
+                    placeholder="Please share your ideas on integrating sustainability into web development..."
+                    required></textarea>
+
+                <input type="hidden" name="_subject"
+                    value="New EcoLogic Job Application">
+
+                <button type="submit">SUBMIT APPLICATION</button>
+
+                <p id="successMessage"></p>
+            </form>
+        </section>
+
+        <script src="Apply.js"></script>
+    </body>
+</html>
